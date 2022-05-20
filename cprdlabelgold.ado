@@ -39,8 +39,6 @@ program define cprdlabelgold
 		forvalues i = 1/`n' {
 			
 			local lookup_`=variable[`i']'_`=file[`i']' = "`=lookup[`i']'"
-			
-			noisily display "`=variable[`i']'_`=file[`i']' = `=lookup[`i']'"
 		}
 		
 		//Restore dataset
